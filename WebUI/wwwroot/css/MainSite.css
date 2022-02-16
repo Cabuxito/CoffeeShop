@@ -1,0 +1,187 @@
+﻿/*MAIN SITE*/
+.exampleScroll {
+    background-image: url('../Photos/MicrosoftTeams-image (1).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+    margin: 0;
+}
+.exampleScroll::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+}
+/*TopNav*/
+.m-title {
+    height: 200px;
+    width: 200px;
+    transform: translateX(-65px)
+}
+    .m-title:hover {
+        filter: blur(1px);
+        text-decoration: none;
+    }
+.m-head {
+    font-size: 50px;
+    text-align: center;
+    color: White;
+    font-family: Lobster;
+    display: block;
+    padding: 2px;
+    background-color: black;
+    max-height: 110px;
+}
+.dropdown {
+    position: static;
+    display: inline-block;
+    float: left;
+    margin-top: 40px;
+}
+.dropMenu {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    transform: translateY(-20px)
+}
+    .dropMenu:hover + .dropdown-content {
+        display: block;
+    }
+    .dropdown-content:hover{
+        display:block;
+        visibility:visible;
+    }
+    .dropMenu:hover {
+        opacity: 0.5;
+    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: -5px;
+    position: fixed;
+    background-color: black;
+    width: 180px;
+    height: 1200px;
+    box-shadow: 0px 20px 16px 0px rgba(0,0,0,0.2);
+    font-size: 30px;
+    text-align: left;
+    transition: opacity 0.25s linear;
+    padding-top: 20px;
+    border-radius: 0px 0px 10px 0px;
+    animation-name: dropConIntro;
+    animation-duration: 0.5s;
+    z-index: 2;
+}
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        opacity: 0.5;
+        position: relative;
+        animation-name: dropConText;
+        animation-duration: 1s;
+    }
+        .dropdown-content a:hover {
+            background-color: transparent;
+            opacity: 1;
+        }
+        @keyframes dropConIntro {
+            from{
+                width: 0px;
+            }
+            to{
+                min-width: 180px;
+            }
+        }
+        @keyframes dropConText {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 0.5;
+            }
+        }
+
+/*FlowImage*/
+.ImgIndex {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px double;
+    width: 600px;
+    height: 500px;
+}
+
+/*CakeTable*/
+.CakeContainer {
+    margin-top: 50px;
+    content: "";
+    background-color: white;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    height: 500px;
+    width: 1000px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    animation-name: cake-enter;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    transition: 0.3s;
+    animation-fill-mode: both;
+    animation-timing-function: unset;
+    outline: 0;
+}
+.CakeColumn {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.CakeImage {
+    position: absolute;
+    height: 480px;
+    width: 500px;
+    border-radius: 5px;
+}
+.CakeName{
+    text-align: center;
+}
+.CakeText{
+    text-align: center;
+    font-family: Gabriola;
+    padding: 50px;
+}
+@keyframes cake-enter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.CakeContainer:hover{
+    transform: scale(2)
+}
+
+.bottomnav
+{
+    transform: translateY(600px);
+}
+
+/*BOTTOM NAVBAR*/
+.bgcontainer {
+    overflow: hidden;
+}
+@font-face {
+    font-family: "Lobster";
+    src: src(../Fonts/Lobster/Lobster-Regular.ttf);
+}

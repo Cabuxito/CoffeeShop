@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Coffe Shop</title>
+    <link href="~/Photos/Coffee/coffe-icon.png" rel="icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/FontAwesome/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="~/css/MainSite.css" />
+    <link rel="stylesheet" href="~/css/LoginSite.css" />
+    <link rel="stylesheet" href="~/css/IndexSite.css" />
+    <link rel="stylesheet" href="~/css/ProductSite.css" />
+    <link rel="stylesheet" href="~/css/ContactSite.css" />
+    <link rel="stylesheet" href="~/css/AboutUsSite.css" /> 
+    <link rel="stylesheet" href="~/css/AdminSite.css" /> 
+    <link rel="stylesheet" href="~/css/CartSite.css" /> 
+    <link rel="stylesheet" href="~/css/AccionsAdmin.css" /> 
+</head>
+<body class="exampleScroll" id="bodyId">
+    <div class="m-head">
+        <div class="dropdown">
+            <div class="dropMenu" id="dm" onmouseout="HoverMenuOut()"><i class="fa fa-fw fa-bars"></i>Menu</div>
+            <div class="dropdown-content" id="dc" onmouseout="HoverContentOut()">
+                <a href="~/Coffe">Coffe</a>
+                <a href="~/Cake">Cake</a>
+                <div class="bottomnav">
+                    <a href="~/LoginSite">Login</a>
+                    <a href="~/Contact">Contact</a>
+                    <a href="~/AboutUs">About us</a>
+                </div>
+            </div>
+        </div>
+        <a href="Index"><img src="~/Photos/CoffeeShopLogo.png" class="m-title" /></a>
+    </div>
+    @RenderBody()
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="~/js/Carousel.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    function HoverMenuOut() {
+        var element1 = document.getElementById("dm");
+        element1.style.opacity = "0.5";
+    }
+    function HoverContentOut() {
+        var element2 = getElementById("dm");
+        element2.style.opacity = "1";
+    }
+</script>
+</body>
+</html>

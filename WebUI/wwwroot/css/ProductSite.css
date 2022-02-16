@@ -1,0 +1,135 @@
+﻿.grid-container {
+    display: grid;
+    grid-template-columns: 600px 600px 600px;
+    grid-template-rows: 250px 250px 250px;
+    background-color: transparent;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 5px;
+    width: 1830px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 10px;
+}
+.grid-Cake
+{
+    font-family: Lobster;
+    color: white;
+    visibility: visible;
+}
+.grid-item{
+    background-color: rgba( 0, 0, 0,0.9);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: block;
+    animation-name: hoverJavaOut;
+    animation-duration: 0.5s;
+}
+.grid-Image {
+    height: 220px;
+    width: 220px;
+    float: left;
+    position: static;
+    border: 2px solid black;
+    border-radius: 10px;
+    visibility: visible;
+}
+.grid-Info {
+    font-size: 17px;
+    font-family: Gabriola;
+    height: 110px;
+    color:white;
+    border-radius: 10px;
+    width: 340px;
+    float: right;
+    background-color: rgba(0,0,0,0);
+    opacity: 0.9;
+}
+.grid-PriceContainer {
+    padding-top: 105px;
+    display: grid;
+    grid-template-columns: 160px 160px;
+    opacity: 1;
+    padding-left: 15px;
+}
+.grid-Price {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    margin: 15px 15px;
+}
+.L-Buttons {
+    background: transparent;
+    color: #F0F0F0;
+    padding-top: 16px;
+    width: 145px;
+    height: 56px;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    /*padding: 20px 75px;*/
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 15px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    text-align: center;
+}
+    .L-Buttons:hover, .O.L-Buttons:focus {
+        background-color: white;
+        color: #333333;
+        text-decoration: none;
+    }
+@keyframes hoverJavaOut{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes hoverJavaIn {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes test{
+    from{
+        opacity: 0;
+    }
+    to {
+        font-size: 20px;
+        background-color: rgba( 0, 0, 0, 0);
+        color: white;
+        border: none;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 1800px) {
+    .grid-container {
+        grid-template-columns: 600px 600px;
+        grid-template-rows: 250px 250px;
+        width: 1230px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: 600px;
+        grid-template-rows: 250px;
+        width: 630px;
+    }
+}

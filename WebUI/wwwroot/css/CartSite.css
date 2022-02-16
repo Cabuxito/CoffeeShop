@@ -1,0 +1,151 @@
+﻿.CartSite 
+{
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    height: 500px;
+    width: 450px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    max-height: 800px;
+}
+.C-Cart
+{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-family: Lobster;
+}
+.C-CartTitle
+{
+    font-size: 15px;
+    padding-top: 25px;
+    padding-inline: 30px;
+    padding-left: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+    position: static;
+    font-family: Lobster;
+}
+.C-Button 
+{
+    background-color: rgba(0,0,0,0.90);
+    color: #F0F0F0;
+    padding: 18px;
+    width: 145px;
+    height: 56px;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin-inline: 35px;
+}
+    .C-Button:hover, .O.C-Button:focus 
+    {
+    background-color: rgba(0,0,0,0.50);
+    color: #333333;
+    text-decoration: none;
+    }
+.C-Buttons
+{
+    padding-top: 20px;
+}
+.C-ID 
+{
+   margin-left: 45px;
+   margin-top: 20px;
+}
+.c-inline
+{
+    display: grid;
+    grid-template-rows: 20px 20px;
+}
+.C-ProductName
+{
+    margin-left: 90px;
+    max-width: 150px;
+    border: none;
+}
+.C-OrderPrice {
+    margin-left: 367px;
+    margin-top: -20px;
+    width: 50px;
+    height: 20px;
+    border: none;
+}
+.C-Number {
+    max-width: 50px;
+    height: 20px;
+    margin-left: 240px;
+    margin-top: -20px;
+}
+.C-Note
+{
+    font-size: 15px;
+    font-family: Lobster;
+    margin-top: 150px;
+    margin-left: 20px;
+}
+.C-Text
+{
+    margin-left: 20px;
+    width: 400px;
+    max-width: 400px;
+    height: 100px;
+}
+.€
+{
+
+}
+
+/*RECEIPT SITE*/
+.C-Container
+{
+    position: relative;
+    text-align: center;
+}
+.C-IMG
+{
+    margin-top: 100px;
+}
+.C-ReceiptName
+{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 710px;
+    font-size: 20px;
+}
+.C-Quantity 
+{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 1030px;
+}
+.C-Price 
+{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 1150px;
+}
+.C-TotalPrice {
+    position: absolute;
+    margin-top: -348px;
+    margin-left: 1150px;
+}
+.C-Date {
+    color:black;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 699px;
+}
+.C-OrderNote
+{
+    margin-top: -250px;
+    margin-left: -350px;
+}

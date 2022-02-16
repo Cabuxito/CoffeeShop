@@ -1,0 +1,44 @@
+﻿@page
+@model WebUI.Pages.Shared.CakeModel
+@{
+}
+<div class="grid-container">
+    @for (int i = 0; i < Model.Images.Count(); i++)
+    {
+        <div class="grid-item" id="gi">
+            <img class="grid-Image" src="@Model.Images[i].ProductImages" />
+            <div class="grid-Cake">@Model.Images[i].ProductNames</div>
+            <div class="grid-Info" onmouseover="hoverItem(this, @i)" onmouseout="hoverItemOut(this, @i)">@Model.Images[i].ProductDescription</div>
+            <div class="grid-PriceContainer" id="@("PriceContainer" + i)">
+                <div class="grid-Price">@Model.Images[i].ProductPrice €</div>
+                <a class="L-Buttons" asp-page="Cart" asp-route-ProductID="@Model.Images[i].ProductID">CHOOSE</a>
+            </div>
+        </div>
+    }
+</div>
+<script>
+    function hoverItem(x, y) {
+        x.style.fontSize = "20px";
+        x.style.backgroundColor = "rgba( 0, 0, 0, 0)";
+        x.style.color = "white";
+        x.style.border = "none";
+        x.style.animationName = "test";
+        x.style.animationDuration = "1s";
+        var y = document.getElementById("PriceContainer" + y);
+        y.style.animationName = "hoverJavaIn";
+        y.style.animationDuration = "0.5s";
+        y.style.opacity = "0";
+    }
+    function hoverItemOut(x, y) {
+        x.style.animationName = "hoverJavaOut";
+        x.style.animationDuration = "0.5s";
+        x.style.fontSize = "15px";
+       /* x.style.border = "2px solid white";*/
+        x.style.backgroundColor = "rgba(0,0,0,0)";
+        x.style.color = "white;";
+        var y = document.getElementById("PriceContainer" + y);
+        y.style.animationName = "hoverJavaOut";
+        y.style.animationDuration = "0.5s";
+        y.style.opacity = "1";
+    }
+</script>

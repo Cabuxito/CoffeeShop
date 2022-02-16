@@ -1,0 +1,63 @@
+﻿.hlpTxt
+{
+    text-align: center;
+    padding-top: 125px;
+    color: white;
+    font-size: 40px;
+    font-family: Lobster;
+}
+.emailName
+{
+    float:inline-start;
+    color: white;   
+    font-family: Lobster;
+}
+.ticketName
+{
+    font-family: Lobster;
+    color: white;
+}
+.emailBox 
+{
+    text-align: center;
+    margin-left: 35%;
+    width: 600px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.TicketBox
+{
+    margin-left: 35%;
+    height: 300px;
+    width: 600px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.btnhelp {
+    font-family: Lobster;
+    margin-left: 45%;
+    background: rgba( 0, 0, 0, 0.90);
+    color: #F0F0F0;
+    border: 2px solid #F0F0F0;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 15px 75px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    border: 2px double white;
+    border-radius: 10px;
+}
+.Status
+{
+    margin-left: 42%;
+    color: white;
+    font-size: 30px;
+}
+@font-face {
+    font-family: "Lobster";
+    src: src(../Fonts/Lobster/Lobster-Regular.ttf);
+}

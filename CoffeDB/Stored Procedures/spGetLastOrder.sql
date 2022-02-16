@@ -1,0 +1,5 @@
+﻿CREATE PROCEDURE [dbo].[spGetLastOrder]
+AS
+	SELECT TOP (1) *
+  FROM Orders ORDER BY Orders_ID DESC
+RETURN 0

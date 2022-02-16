@@ -1,0 +1,92 @@
+﻿/*EDITABLE BUTTON/SITE*/
+
+.EditTable
+{
+    background-color: rgbA(0,0,0,0.70);
+    margin-top: 100px;
+    margin-left: 750px;
+    border: 2px solid black;
+    padding: 50px;
+    width: 400px;
+    color: white;
+    text-align: center;
+}
+.EditTitle
+{
+    margin-top: -30px;
+}
+.EditButton {
+    background-color: rgba(0,0,0,0.90);
+    color: #F0F0F0;
+    padding: 18px;
+    width: 100px;
+    height: 56px;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin-inline: 5px;
+    margin-top: 20px;
+}
+    .EditButton:hover, .O.EditButton:focus {
+    background-color: rgba(0,0,0,0.50);
+    color: #333333;
+    text-decoration: none;
+}
+.DescriptionEdit
+{
+    height: 200px;
+    width: 300px;
+}
+
+/*NEW PRODUCT SITE*/
+.NewItem
+{
+    background-color: rgba(0,0,0,0.8);
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 850px;
+    max-height: 1000px;
+    max-width: 300px;
+    text-align: center;
+    color: white;
+}
+.Newbtn {
+    background-color: rgba(0,0,0,0.90);
+    color: #F0F0F0;
+    padding: 18px;
+    width: 100px;
+    height: 56px;
+    border: 1px solid #F0F0F0;
+    border-radius: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin-inline: 5px;
+    margin-top: 20px;
+}
+    .Newbtn:hover, .O.Newbtn:focus {
+    background-color: rgba(0,0,0,0.50);
+    color: #333333;
+    text-decoration: none;
+}
+
+.DescriptionADD
+{
+    width: 210px;
+    height: 200px;
+}
+.ImageUpload {
+    width: 75px;
+}

@@ -1,0 +1,92 @@
+﻿
+@keyframes introThomas{
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 300px;
+    }
+}
+@keyframes introBrian {
+    from {
+        margin-right: -1000px;
+    }
+
+    to {
+        margin-right: -500px;
+    }
+}
+.row
+{
+    
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.column {
+    position: center;
+    width: 49%;
+    margin-bottom: 16px;
+    /*padding: 15px 200px;*/
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    height: 100%;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba( 0, 0, 0, 0.90);
+}
+
+.container {
+    padding: 0 16px;
+}
+
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.title {
+    color: grey;
+    font-family: Lobster;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .button:hover {
+        background-color: #555;
+    }
+
+@font-face {
+    font-family: "Lobster";
+    src: src(../Fonts/Lobster/Lobster-Regular.ttf);
+}

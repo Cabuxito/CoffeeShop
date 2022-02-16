@@ -1,0 +1,29 @@
+﻿@page "{ProductID:int}"
+@model WebUI.Pages.CartModel
+@{
+}
+
+
+<form class="CartSite" asp-page-handler="BuyCoffe" method="post">
+    <div class="C-Div">
+        <div class="C-Cart">CART</div>
+        <div class="C-CartTitle">ID</div>
+        <div class="C-CartTitle">PRODUCTS</div>
+        <div class="C-CartTitle">QUANTITY</div>
+        <div class="C-CartTitle">PRICE</div>
+        <div class="c-inline">
+            <div class="C-ID">@Model.ProductID</div>
+            <input readonly asp-for="ProductName" value="@Model.product.ProductName" class="C-ProductName"/>
+            <input asp-for="OrderAmount" class="C-Number" type="number"/>
+            <input readonly asp-for="OrderPrice" value="@Model.product.ProductPrice" class="C-OrderPrice"/>
+        </div>
+        <div class="C-Note">NOTE:</div>
+        <textarea asp-for="OrderNote" class="C-Text"></textarea>
+        <div class="C-Buttons">
+            <a class="C-Button" asp-page="Coffe" type="button">Cancel</a>
+            <button class="C-Button" type="submit">Buy</button>
+        </div>
+    </div>
+</form>
+@*<form asp-page-handler="WriteNote" method="post">
+</form>*@

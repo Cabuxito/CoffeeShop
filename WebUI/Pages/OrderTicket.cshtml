@@ -1,0 +1,15 @@
+﻿@page 
+@model WebUI.Pages.OrderTicketModel
+@{
+}
+
+
+<div class="C-Container">
+    <img class="C-IMG" src="~/Photos/Desktop - 1 (2).png" alt="Receipt" />
+    <div class="C-ReceiptName">@Model.Orders.ProductName</div>
+    <div class="C-Quantity">@Model.Orders.Quantity</div>
+    <div class="C-Price">@Model.Orders.Price</div>
+    <div class="C-TotalPrice">@Model.Orders.TotalOrder</div>
+    <div class="C-Date">Date:  @Model.Orders.OrderDato</div>
+    <div class="C-OrderNote">@Model.Orders.OrderNote</div>
+</div>

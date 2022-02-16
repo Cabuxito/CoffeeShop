@@ -1,0 +1,27 @@
+﻿@page  "{productID:int}"
+@model WebUI.Pages.EditSiteModel
+@{
+}
+
+
+
+<form method="post">
+    <div class="EditTable">
+        <div>
+            <h1 class="EditTitle">Edit Product</h1>
+        </div>
+        <h3>Product ID: @Model.ProductID</h3>
+        <input readonly hidden type="text" value="@Model.ProductID" />
+        <h3>Name:</h3>
+        <input asp-for="ProductName" type="text" value="@Model.product.ProductName" />
+        <h3>Description:</h3>
+        <textarea asp-for="product.ProductDescription" class="DescriptionEdit" rows="5" cols="60"></textarea>
+        @*<input asp-for="ProductDescription" class="DescriptionEdit" type="text" value="@Model.product.ProductDescription"/>*@
+        <h3>Price:</h3>
+        <input asp-for="Price" type="text" value="@Model.product.ProductPrice" />
+        <div>
+            <a asp-page="AdminSite" class="EditButton">Cancel</a>
+            <button type="submit" class="EditButton">Submit</button>
+        </div>
+    </div>
+</form>

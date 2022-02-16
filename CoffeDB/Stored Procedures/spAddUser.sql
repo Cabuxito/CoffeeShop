@@ -1,0 +1,4 @@
+﻿CREATE PROCEDURE [dbo].[spAddUser]
+AS
+	SELECT * FROM Users;
+RETURN 0

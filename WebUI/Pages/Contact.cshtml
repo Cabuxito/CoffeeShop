@@ -1,0 +1,15 @@
+﻿@page
+@model WebUI.Pages.ContactModel
+@{
+}
+<form method="post">
+    <label class="hlpTxt">Do you need help? Write to us.</label><br />
+    <label class="emailName">Email</label>
+    <input asp-for="Email" class="emailBox" type="email" required /><br /><br />
+    <label class="ticketName">Message</label>
+    <textarea asp-for="Text" class="TicketBox" type="text" required></textarea><br /><br />
+    <input class="btnhelp" type="submit" name="Send" />
+</form>
+<span class="Status">
+    @ViewData["Status"]
+</span>

@@ -1,0 +1,62 @@
+﻿.AdminForms {
+    margin-top: 100px;
+    margin-left: 42%;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    width: 300px;
+    height: 210px;
+    background-color: rgba( 0, 0, 0, 0.90);
+    text-align: center;
+    color: white;
+}
+.btn
+{
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.AdminTable {
+    text-align: center;
+    color: antiquewhite;
+    max-width: 95%;
+    background-color: rgba(0,0,0,0.7);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+
+}
+.tabletext
+{
+    padding: 15px;
+    border: 0.2px solid grey;
+    border-radius: 10px;
+}
+.EditBtn {
+    color: white;
+    background-color: rgba( 0, 0, 0, 0.40);
+    border: 0.5px solid grey;
+    padding: 10px;
+    max-height: 40px;
+    border-radius: 5px;
+}
+.tabletextbtn
+{
+    border: 1px solid white;
+    padding: 20px;
+}
+.NewProduct
+{
+    color: white;
+    padding: 15px;
+    background-color: black;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    margin-left: 48px;
+    margin-top: 20px;
+}
+.tabletextAccions
+{
+    transform: translateX(35px);
+}

@@ -1,0 +1,38 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "About Us";
+}
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="~/Photos/PrivatPhoto/MicrosoftTeams-image (3).png" alt="Brian" style="width:100%">
+            <div class="container">
+                <h2 style="color: white; font-family: Lobster;" >Brian Pedersen</h2>
+                <p class="title">Full Stack Developer</p>
+                <p style="color:white;" id="textBrian"></p>
+                <p style="color:white;">test@hotmail.com</p>
+                <a href="mailto:test@hotmail.com" class="button">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img src="~/Photos/PrivatPhoto/MicrosoftTeams-image (1).png" alt="Thomas" style="width:100%">
+            <div class="container">
+                <h2 style="color: white; font-family: Lobster;">Thomas Damkjær</h2>
+                <p class="title">Full Stack Developer</p>
+                <p style="color:white;" id="textThomas"></p>
+                <p style="color: white;">test@hotmail.com</p>
+                <a href="mailto:test@hotmail.com" class="button">Contact</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        document.getElementById("textBrian").innerHTML = "My name is Brian and I'm studiyng Data Technician specialising in programming. I am 27 years old and Im from Argentina, but I live in Denmark. I have experience with .NET, C#, SQL server, HTML, CSS, Razor Pages.";
+        document.getElementById("textThomas").innerHTML = "My name is Thomas and I'm studiyng Data Technician specialising in programming. I am 33 years old and I'm from Denmark. We are working on this Website as a practice.I got some experience with .NET, C#, Sql, HTML and CSS. "
+        var element = document.querySelector(".m-bottom");
+        element.style.backgroundColor = "rgba( 0, 0, 0, 0)";
+    </script>

@@ -1,0 +1,104 @@
+﻿@page
+@model WebUI.Pages.AdminSiteModel
+@{
+}
+<div class="AdminForms">
+    <form method="post">
+        <h2>Admin</h2><br />
+        <select asp-for="adminChoice">
+            <option>Orders</option>
+            <option>Coffee</option>
+            <option>Cakes</option>
+        </select><br /><br />
+        <input class="btn" type="submit" value="Search" />
+    </form>
+</div>
+
+
+@if (Model.OrdersCheck)
+{
+    <table class="AdminTable">
+        <tr>
+            <th class="tabletext">ID</th>
+            <th class="tabletext">Name</th>
+            <th class="tabletext">Price</th>
+            <th class="tabletext">Order Dato</th>
+            <th class="tabletext">Delete</th>
+        </tr>
+        @foreach (var item in Model.GetOrders)
+        {
+            <tr>
+                <td class="tabletext">@item.OrderId</td>
+                <td class="tabletext">@item.ProductName </td>
+                <td class="tabletext">@item.Price</td>
+                <td class="tabletext">@item.OrderDato</td>
+                <td class="tabletext">
+                <form method="post"><button type="submit" class="EditBtn" asp-route-orderId="@item.OrderId" asp-page-handler="DeleteOrder" onclick="return confirm('Are you sure?')"><i class="far fa-trash-alt"></i></button></form></td>
+            </tr>
+        }
+    </table>
+}
+@if (Model.CoffeeCheck)
+{
+    <div>
+        <a class="NewProduct" asp-page="NewProductSite"><i class="far fa-plus-square">  New Product</i></a>
+    </div>
+    <table class="AdminTable">
+        <tr>
+            <th class="tabletext">ID</th>
+            <th class="tabletext">Name</th>
+            <th class="tabletext">Description</th>
+            <th class="tabletext">Price</th>
+            <th class="tabletext">Image</th>
+            <th class="tabletextAccions">Accions</th>
+        </tr>
+        @foreach (var item in Model.GetCoffee)
+        {
+            <tr>
+                <td class="tabletext">@item.CoffeeId </td>
+                <td class="tabletext">@item.CoffeeName</td>
+                <td class="tabletext">@item.CoffeeDescription</td>
+                <td class="tabletext">@item.CoffeePrice</td>
+                <td class="tabletext">@item.PathToImg</td>
+                <td class="tabletextbtn"><a class="EditBtn" asp-page="EditSite" asp-route-productID="@item.CoffeeId"><i class="far fa-edit"></i></a></td>
+                <td class="tabletextbtn">
+                    <form method="post">
+                        <button type="submit" class="EditBtn" asp-route-productID="@item.CoffeeId" asp-page-handler="DeleteProduct" onclick="return confirm('Are you sure?')"><i class="far fa-trash-alt"></i></button>
+                     </form>
+                </td>
+            </tr>
+        }
+    </table>
+}
+@if (Model.CakeCheck)
+{
+    <div>
+        <a class="NewProduct" asp-page="NewProductSite"><i class="far fa-plus-square">  New Product</i></a>
+    </div>
+    <table class="AdminTable">
+        <tr>
+            <th class="tabletext">ID</th>
+            <th class="tabletext">Name</th>
+            <th class="tabletext">Description</th>
+            <th class="tabletext">Price</th>
+            <th class="tabletext">Image</th>
+            <th class="tabletextAccions">Accions</th>
+        </tr>
+        @foreach (var item in Model.GetCake)
+        {
+            <tr>
+                <td class="tabletext">@item.CakeId</td>
+                <td class="tabletext">@item.CakeName</td>
+                <td class="tabletext">@item.CakeDescription</td>
+                <td class="tabletext">@item.CakePrice</td>
+                <td class="tabletext">@item.PathToImg</td>
+                <td class="tabletextbtn"><a class="EditBtn" asp-page="EditSite" asp-route-productID="@item.CakeId"><i class="far fa-edit"></i></a></td>
+                <td class="tabletextbtn">
+                    <form method="post">
+                        <button type="submit" class="EditBtn" asp-route-productID="@item.CakeId" asp-page-handler="DeleteProduct" onclick="return confirm('Are you sure?')"><i class="far fa-trash-alt"></i></button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+}

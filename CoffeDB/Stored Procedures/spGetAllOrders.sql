@@ -1,0 +1,4 @@
+﻿CREATE PROCEDURE [dbo].[spGetAllOrders]
+AS
+	SELECT * FROM Orders;
+RETURN 0

@@ -1,0 +1,26 @@
+﻿@page
+@model WebUI.Pages.NewProductSiteModel
+@{
+}
+<form class="ProductForm" method="post" enctype="multipart/form-data">
+    <div class="NewItem">
+        <h1>New Product</h1>
+        <h3>Name:</h3>
+        <input type="text" asp-for="Name" required/>
+        <h3>Description:</h3>
+        <textarea class="DescriptionADD" asp-for="Description" required></textarea>
+        <h3>Price:</h3>
+        <input type="text" asp-for="Price" required/>
+        <h3>Quantity:</h3>
+        <input type="text" asp-for="Quantity" required/>
+        <h3>Insert Image:</h3>
+        @*<textarea type="text" asp-for="PathToImg" placeholder="Fx:/Photos/Coffee/americano.webp" required></textarea>*@
+        <input class="ImageUpload" asp-for="UploadFile" type="file" accept="image/*"/>
+        <h3>Type:</h3>
+        <input type="text" asp-for="Type" required/><br/><br/>
+        <div>
+            <a href="/AdminSite" class="Newbtn">Cancel</a>
+            <button class="Newbtn">Submit</button>
+        </div>
+    </div>
+</form>
